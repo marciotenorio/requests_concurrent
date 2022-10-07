@@ -1,4 +1,4 @@
-package request;
+package benchmark;
 
 public class Client {
     private String ip;
