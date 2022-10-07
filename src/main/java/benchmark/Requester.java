@@ -19,10 +19,10 @@ public class Requester implements Runnable{
             response = restTemplate.getForEntity(url, String.class);
             clientInfo = gson.fromJson(response.getBody(), Client.class);
 
-//            System.out.println("Your IP is " + clientInfo.getIp() + "/" + clientInfo.getCc());
+            System.out.println("Your IP is " + clientInfo.getIp() + "/" + clientInfo.getCc());
         }
         catch (RestClientException e){
-//            System.out.println("Service unavailable.");
+            System.out.println("Service unavailable.");
         }
 
     }
